@@ -1,0 +1,55 @@
+
+
+
+
+
+main {
+    display: flex;
+    width: 100vw;
+    height:max-content;
+    box-sizing: border-box;
+    background-color: tomato;
+    padding: 48px;
+    .side {
+        background-color: yellow;
+        .side__menu {
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: max-content;
+                    padding: 0px 24px;
+                    height: 48px;
+                    border-radius: 24px;
+                    background-color: brown;
+                    font-size: 28px;
+                    color:white;
+                }
+            }
+        }
+    }
+    .personalWork-1 {
+        height:100vh;
+        background-color: orange;
+        display: grid;
+        grid-template-columns: 120px 1fr 120px;
+        .work__info {
+            grid-column: 2/3;
+            height: 100%;
+            display: flex;
+            justify-content:space-between;
+            .work__info-title {
+                display: flex;
+                flex-direction: column;
+            }
+            .work__info-descriiption {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

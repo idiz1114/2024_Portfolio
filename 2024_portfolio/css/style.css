@@ -1,0 +1,16 @@
+/*--스타일 초기화--*/
+@import url("reset.css");
+@import url("variables.css");
+
+
+
+
+
+/*--컴포넌트 스타일--*/
+@import url("./component/footer.css");
+@import url("./component/top-navigation.css");
+@import url("./component/side-navigation.css");
+
+/*--페이지별 스타일--*/
+@import url("./screens/home.css");
+@import url("./screens/personalWork.css");

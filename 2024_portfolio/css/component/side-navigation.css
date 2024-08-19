@@ -1,0 +1,47 @@
+#side-navigation {
+    position: fixed;
+    right:0px;
+    top:0px;
+    width: 35%;
+    height:100vh;
+    background-color: greenyellow;
+    .side-navigation__buttons {
+        width: 48px;
+        height: 48px;
+        background-color: grey;
+    }
+    .side-navigation__container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            li {
+                font-size: 48px;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+
+@keyframes drawer {
+    0% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(500px);
+    }
+}
+
+.active {
+    animation: drawer 5s 1 ease-in-out;
+}
+
+.displayNone {
+    display: none;
+}
