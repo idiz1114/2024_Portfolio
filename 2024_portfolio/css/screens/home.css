@@ -18,38 +18,42 @@ main {
             linear-gradient(90deg, var(--line-grey) 1px, transparent 1px),
             linear-gradient(var(--line-grey) 1px, transparent 1px),
             linear-gradient(90deg, var(--line-grey) 1px, transparent 1px);
-            background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-            background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-        display: grid;
-        grid-template-columns: 120px 1fr 120px;
-        border-bottom: 2px solid black;
+        background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+        background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         .home-1__content {
-            grid-column: 2/3;
-
-            display: grid;
-            grid-template: 1fr / repeat(12, 1fr);
-            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 80px;
                 .title-font {
-                    grid-column: 1/6;
-                    display: flex;
-                    align-items: center;
                     h1 {
+                        font-size: 120px;
+                        text-align: center;
                         color:var(--point-green);
                         background-color: #FFFCBE;
                     }
                 }
                 .home-1__content-character {
-                    grid-column: 6/9;
+                    width:100%;
+                    height: 800px;
+                    position: absolute;
+                    right:auto;
+                    top:4%;
                     background-image:url("/SVG/home-me-idle.svg");
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
+                    filter: drop-shadow(10px 6px 6px #c3c3c3);       
                 }
                 .job-list {
                     grid-column: 9/12;
                     display: flex;
                     flex-direction: column;
-                    align-items: end;
+                    align-items: center;
                     justify-content: center;
                     gap: 12px;
                     .job-list__item {
@@ -76,8 +80,6 @@ main {
         padding: 80px 120px;
         gap:20px;
         box-sizing: border-box;
-        h2 {
-        }
         .home-2__content {
             display: flex;
             flex-direction: column;
@@ -85,14 +87,19 @@ main {
             width: 100%;
             .home-2__content-card {
                 box-sizing: border-box;
-                padding: 24px;
+                padding: 48px;
                 background-color: white;
                 border: 3px solid black;
                 display: flex;
                 flex-direction: column;
-                gap: 16px;
+                gap: 20px;
                 h3 {
+                    width:max-content;
                     font-size: 24px;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    background-color: var(--point-green);
+                    
                 }
                 .home-2__content-card__detail {
                     display: grid;
@@ -101,16 +108,16 @@ main {
                     .home-2__content-card__detail-column {
                         display: flex;
                         flex-direction: column;
-                        gap: 12px;
+                        gap: 8px;
                         h5 {
                             font-size: 16px;
-                            font-weight: 700;
+                            font-weight: 900;
+                            color: var(--point-green);
                         }
                         p {
                             line-height: 1.4;
                         }
                     }
-
                 }
             }
         }
@@ -170,6 +177,7 @@ main {
                 justify-content: center;
                 align-items: center;
                 gap: 16px;
+
                 p {
                     text-align: center;
                     line-height: 1.4;
@@ -192,4 +200,18 @@ li a {
     color: inherit;
     text-decoration: none;
     color: white;
+}
+
+.cartoon-textbox {
+    width:max-content;
+    height:max-content;
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 8px;
+    padding:20px;
+}
+
+#home-title {
+    display: flex;
+    gap:500px;
 }

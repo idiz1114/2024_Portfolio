@@ -5,10 +5,8 @@
     width: 35%;
     height:100vh;
     background-color: var(--point-green);
-    display: grid;
-    grid-template-rows: 120px 1fr 120px;
+    z-index: 99;
     .side-navigation__buttons {
-        grid-row: 1/2;
         width: 100%;
         height: 120px;
         display: flex;
@@ -17,12 +15,9 @@
         svg {
             width: 48px;
             height: 48px;
-            background-color: grey;
         }
     }
     .side-navigation__container {
-        grid-row: 2/3;
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -39,7 +34,6 @@
         }
     }
     .side-navigation__sns {
-        grid-row: 3/4;
         display: flex;
         gap:16px;
         padding: 0px 80px;
