@@ -7,7 +7,7 @@ main {
     background-color: teal;
     .home-1 {
         height:100vh;
-        background-color: orange;
+        background-color: var(--grey);
         display: grid;
         grid-template-columns: 120px 1fr 120px;
         .home-1__content {
@@ -18,11 +18,8 @@ main {
             grid-template: repeat(5, 1fr) / repeat(12, 1fr);
             gap: 20px;
                 h1 {
-                    font-size: 36px;
-                    font-weight: 800;
                     grid-column: 1/6;
                     grid-row: 2/3;
-                    background-color: red;
                 }
                 .job-list {
                     grid-column: 6/12;
@@ -49,15 +46,15 @@ main {
         }
     .home-2 {
         height:100vh;
-        background-color: pink;
+        background-color: var(--grey);
     }
     .home-3 {
         height:100vh;
-        background-color: green;
+        background-color: var(--point-green);
     }
     .home-4 {
         height:100vh;
-        background-color: yellow    ;
+        background-color: var(--grey);
     }
 }
 
