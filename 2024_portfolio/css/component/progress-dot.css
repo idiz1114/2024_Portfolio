@@ -1,0 +1,23 @@
+.progress-dot {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    position: fixed;
+    bottom: 24px;
+    
+    .progress-dot__container {
+        display: flex;
+        gap: 18px;
+        .progress-dot__item {
+            width: 24px;
+            height: 24px;
+            border-radius: 24px;
+            background-color: grey  ;
+            &:first-child {
+                background-color: var(--point-green);
+                width: 60px;
+            }
+        }
+    }
+}

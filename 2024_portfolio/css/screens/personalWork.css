@@ -1,15 +1,4 @@
-
-
-
-
-
 main {
-    display: flex;
-    width: 100vw;
-    height:max-content;
-    box-sizing: border-box;
-    background-color: tomato;
-    padding: 48px;
     .side {
         background-color: yellow;
         .side__menu {

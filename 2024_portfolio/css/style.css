@@ -11,6 +11,7 @@
 @import url("./component/footer.css");
 @import url("./component/top-navigation.css");
 @import url("./component/side-navigation.css");
+@import url("./component/progress-dot.css");
 
 /*--페이지별 스타일--*/
 @import url("./screens/home.css");

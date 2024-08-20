@@ -1,6 +1,8 @@
 :root {
     --point-green : #20C39C;
     --grey : #F0F0F0;
+    --line-grey : #9D9D9D;
+    --brown : #391C0B;
 }
 
 .title-font {
@@ -9,6 +11,4 @@
     font-style: normal;
     font-size: 64px;
     line-height: 150%;
-    color:var(--point-green);
-    background-color: #FFFCBE;
 }
