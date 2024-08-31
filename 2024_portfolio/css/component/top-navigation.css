@@ -1,6 +1,7 @@
 #top-navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     position: fixed;
 
@@ -8,16 +9,27 @@
     height:120px;
     background-color: var(--grey);
     z-index: 99;
-    padding: 8px 120px;
+    padding: 8px 25%;
     justify-content: space-between;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;    .logo {
-        width: 124px;   
-        height: 26px;
-        background-image: url("/SVG/seopak-logo.svg");
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    .top-navigation__container {
+        width:1440px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: yellow;
+        box-sizing: border-box;
+        position: fixed;
+        .logo {
+            width: 124px;   
+            height: 26px;
+            background-image: url("/SVG/seopak-logo.svg");
+        }
+        .menu-icon {
+            width: 48px;
+            height: 48px;
+        }
     }
-    .menu-icon {
-        width: 48px;
-        height: 48px;
-    }
+    
 }
